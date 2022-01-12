@@ -4,13 +4,32 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Letter Generator</title>
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
-  <script rel="js/jQuery.js"></script>
-  <script rel="scripts.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/scripts.js"></script>
 </head>
 <body>
-  
+  <div class="container">
+    <h1>Send Yourself a Letter</h1>
+    <img src="https://www.loremflickr.com/600/150/letter" alt="picture of a letter">
+    <h2>Instructions</h2>
+    <div>
+      <form id="postcard-form">
+        <div class="form-group">
+          <label for="name">Please enter your name</label>
+          <input id="name" class="form-control" type="text" placeholder="Enter your name here">
+        </div>
+        <button type="submit" class="btn btn-primary">Show me my letter</button>
+      </form>
+    </div>
+    <div id="postcard">  
+      <p>Dear <span id="insert-name"></span>,</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat semper viverra nam libero justo laoreet sit amet. Enim nec dui nunc mattis enim ut tellus. Adipiscing diam donec adipiscing tristique risus nec. Ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus. Purus ut faucibus pulvinar elementum integer enim neque volutpat ac. Nisl rhoncus mattis rhoncus urna neque viverra justo. Bibendum est ultricies integer quis auctor. Adipiscing bibendum est ultricies integer. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Molestie at elementum eu facilisis sed odio morbi quis commodo.</p>
+      <p>With all warmth,</p>
+      <p>Chester Bennington, former lead singer of the band Linkin Park</p>
+    </div>
+  </div>
 </body>
 </html>
